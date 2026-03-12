@@ -11,6 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="EasyAdder" />
     <link rel="apple-touch-icon" href="/easyadder/apple-touch-icon.png" />
+    <style>
+      body { margin: 0; }
+      @media print {
+        .no-print { display: none !important; }
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        div[style*="position: sticky"] { position: static !important; }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
